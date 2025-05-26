@@ -1,0 +1,1116 @@
+body{
+    margin: 0px 10px;
+    padding: 0px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    
+}
+.background{
+    position: fixed;
+   width: 100%;
+    height: 100%;
+    object-fit: cover;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    
+}
+.title{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 35px;
+    
+    
+}
+
+
+.cover{
+    position: fixed;
+    inset: 0 0 0 0;
+    
+
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.121);
+    backdrop-filter: blur(5px);
+    z-index: 999;
+    
+}
+header ul{
+    
+    justify-content: space-between;
+    display: flex;
+    width: 30%;
+    padding: 15px 15px;
+    border-radius: 50px;
+    background-color: #00004553;
+    box-shadow: 0 0 10px #72a1de63;
+
+
+}
+header ul li {
+    list-style: none;
+    
+}
+header ul a{
+    color: rgb(255, 255, 255);
+    
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+    margin:0 10px;
+
+}
+header ul a:hover{
+    text-shadow: 0 0 35px white;
+}
+.box-icons{
+    
+    display: flex;
+    gap: 40px;
+}
+.box-icons p{
+    background-color: #22289784;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    border:2px solid #72a1de;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+.box-icons p:hover{
+    background-color: #72a1de;
+    color: black;
+    box-shadow: 0 0 15px #72a1de;
+}
+.blackhole-box{
+    position: absolute;
+    top: 0;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+    mix-blend-mode: lighten ;
+
+}
+.blackhole-box video{
+    width: 100%;
+    margin-top:-23.5%;
+}
+.hero{
+    position: rel;
+    display: flex;
+    width:100%;
+    height: 80vh;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero-info{
+    position: relative;
+    left: 5%;
+}
+
+.hero-info div{
+    color: #72a1de;
+    padding: 8px 5px;
+    border-radius:50px;
+    border: 1px solid white;
+    width:fit-content;
+    background-color:#2200493d;
+    box-shadow: 0 0 25px #72a1de84;
+}
+.hero-info h1{
+    color: white;
+    font-size: 60px;
+    max-width: 600px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-top: 40px;
+    margin-bottom:30px;
+}
+.hero-info p{
+    color: white;
+    max-width: 550px;
+    line-height: 25px;
+    margin-bottom: 40px;
+    font-size: 20px;
+
+}
+
+.hero-info button{
+    color: white;
+    
+    padding: 10px 25px;
+    border-radius:10px;
+    border:1px solid #72a1de81;
+    background-color: #2200493d;
+    box-shadow: 0 0 5px #72a1de81;
+    cursor: pointer;
+    transition: 0.3s ;
+}
+.hero-info button:hover{
+    background-color: #021e42;
+    box-shadow: 0 0 15px #011b3d;
+}
+.gradient{
+    background:linear-gradient(to right, #008baa, #7e42a7,#6600c5,#6070fd,#2a46ff,#0099ff,#008ead);
+    background-size:200% ;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent ;
+    animation:animate-gradiant 3s linear infinite;
+}
+@keyframes animate-gradiant{
+    to{
+        background-position: 200%;
+    }
+}
+.astronaut{
+    position: absolute;
+    right: 5%;
+    height:400px;
+    mix-blend-mode: lighten;
+}
+.about-section{
+   
+    display: flex;
+    padding: 0 10%;
+    justify-content: space-between;
+}
+.info-card{
+     display: flex;
+     align-items: center;
+     max-width: 120px;
+}
+.info-card h1{
+    background:linear-gradient(to right, #008baa, #7e42a7,#6600c5,#6070fd,#2a46ff,#0099ff,#008ead);
+    background-size:200% ;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent ;
+    animation:animate-gradiant 3s linear infinite;
+    font-size: 55px;
+    margin-right: 20px;
+    margin-top:0;
+    margin-bottom:0;
+}
+.info-card p{
+    color: white;
+    font-size: 20px;
+}
+
+.About{
+    Color: white;
+    font-size: 40px;
+   margin-top: 80px;
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: 2px;
+
+}
+.about-me{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:white;
+    font-size: 24px;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 40px 40px;
+    background-color:#2200493d;
+    box-shadow: 0 0 5px #72a1de84;
+    transition: 0.5s;
+}
+    
+
+.Skill{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px;
+}
+.Gam-Dev{
+    
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+
+
+.button-container {
+    display: flex;  
+    justify-content: space-between; 
+    flex-wrap: wrap;  
+    gap: 20px; 
+    padding: 20px;
+    width: 100%;  
+    box-sizing: border-box; 
+     
+}
+
+/* Individual button styling */
+.icon-button {
+    display: flex;
+    flex-direction: column;  /* Icon upar, text niche */
+    align-items: center;
+    text-align: center;
+    background-color:#2200493d;
+    box-shadow: 0 0 9px #72a1de84; 
+    border: 1px solid white;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 120px;  
+    height: 120px; 
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    z-index: 999;
+}
+
+.icon-button i {
+    font-size: 60px;  
+     
+}
+
+.icon-button p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.icon-button:hover {
+
+    background-color: #72a1de;
+    color: black;
+    box-shadow: 0 0 15px #72a1de;
+    transform: scale(1.2); 
+}
+#design{
+    justify-content: center;
+}
+.character {
+    position: fixed; /* Fixed so that it moves freely */
+    top: 50px;
+    left: 50px;
+    width: 150px;
+    height: 150px;
+    transition: transform 0.8s ease-in-out;
+    pointer-events: none; /* Taaki yeh hover aur clicks block na kare */
+    z-index: 10; /* Ensure it's always above other elements */
+    
+}
+.speech-bubble {
+    position: absolute;
+    top: -30px;
+    left: 30px;
+    background: white;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    animation: bubbleFade 2s infinite alternate;
+    
+    box-shadow: 0 0 35px #72a1de;
+}
+
+@keyframes bubbleFade {
+    0% { opacity: 0.5; transform: translateY(0px); }
+    100% { opacity: 1; transform: translateY(-5px); }
+}
+.project{
+    justify-content: center;
+    font-size:30px;
+    justify-content: space-between;
+}
+
+.project-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    height: 100px;
+    background: rgba(255, 255, 255, 0.121);
+    backdrop-filter: blur(5px);
+   
+    
+    z-index: 999;
+    width:auto;
+    
+    
+}
+.project-button ul{
+    
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2vw; /* Dynamic padding based on the width of the viewport */
+    box-sizing: border-box;
+    background-color: #00004553;
+    box-shadow: 0 0 10px #72a1de63;
+    
+    
+}
+    
+
+
+.project-button ul li {
+    list-style: none;
+    padding: 0 auto;
+    
+}
+.project-button ul a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+    margin:0 10px;
+
+}
+.project-button ul a:hover{
+    text-shadow: 0 0 15px white;
+}
+.phone{
+    display :flex;
+    flex-direction: row;
+}
+.gmail{
+    
+    font-size:20px;
+    
+    margin: 40px 80px;
+    
+    Display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+   
+    
+}
+.gmail-button{
+    display: flex;
+    align-items: center;
+    border : 2px solid white;
+    border-radius: 20px;
+    background-color:#2200493d;
+    box-shadow: 0 0 5px #72a1de84;
+    transition: 0.5s;
+    cursor: pointer;
+    padding: 0 10px;
+    z-index:1;
+
+
+}
+    
+#gmail-icon {
+    background-color: #22289784;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    border:2px solid #72a1de;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+    z-index: 1;
+    margin: 0 10px;
+
+
+}
+#gmail-icon:hover{
+    background-color: #72a1de;
+    color: white;
+    box-shadow: 0 0 15px #72a1de;
+    z-index: 1;
+    transform: scale(2); 
+}
+.discord{
+    
+    font-size:20px;
+    
+    margin: 40px 80px;
+    
+    Display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+   
+    
+}
+.discord-button{
+    display: flex;
+    align-items: center;
+    border : 2px solid white;
+    border-radius: 20px;
+    background-color:#2200493d;
+    box-shadow: 0 0 5px #72a1de84;
+    transition: 0.5s;
+    cursor: pointer;
+    padding: 0 10px;
+    z-index:1;
+
+
+}
+    
+#discord-icon {
+    background-color: #22289784;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    border:2px solid #72a1de;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+    z-index: 1;
+    margin: 0 10px;
+
+
+}
+#discord-icon:hover{
+    background-color: #72a1de;
+    color: white;
+    box-shadow: 0 0 15px #72a1de;
+    z-index: 1;
+    transform: scale(2); 
+}
+.whatsapp{
+    font-size:20px;
+    
+    margin: 40px 80px;
+    
+    Display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+   
+    
+}
+.whatsapp-button{
+    display: flex;
+    align-items: center;
+    border : 2px solid white;
+    border-radius: 20px;
+    background-color:#2200493d;
+    box-shadow: 0 0 5px #72a1de84;
+    transition: 0.5s;
+    cursor: pointer;
+    padding: 0 10px;
+    z-index:1;
+
+
+}
+    
+#whatsapp-icon {
+    background-color: #22289784;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    border:2px solid #72a1de;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+    z-index: 1;
+    margin: 0 10px;
+
+
+}
+#whatsapp-icon:hover{
+    background-color: #72a1de;
+    color: white;
+    box-shadow: 0 0 15px #72a1de;
+    z-index: 1;
+    transform: scale(2); 
+}
+#contactForm{
+    border: 2px solid white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 40px 80px;
+    background-color:#2200493d;
+    box-shadow: 0 0 5px #72a1de84;
+    transition: 0.5s;
+    margin-bottom: 40px;
+   
+    
+
+}
+.form-info{
+    font-size: 25px;
+    padding: 20px 0;
+    
+}
+.box{
+    border-radius: 10px;
+    height: 50px;
+    z-index: 1;
+    margin:0 50px;
+}
+
+
+.pushable {
+    background: hsl(340deg 100% 32%);
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    width: 150px;
+    margin-left: 45%;
+    margin-top: 3% ;
+
+  }
+  .front {
+    display: block;
+    padding: 12px 42px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    background: hsl(345deg 100% 47%);
+    color: white;
+    transform: translateY(-6px);
+  }
+
+  .pushable:active .front {
+    transform: translateY(-2px);
+  }
+  .tag{
+    font-size: 50px;
+    font-weight: bolder;
+  }
+  .character {
+    position: fixed; /* Free movement allow करता है */
+    top: 50px;
+    left: 50px;
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    pointer-events: auto; /* Hover काम करेगा */
+    z-index: 10;
+}
+
+/* Hover effect */
+.character:hover {
+    transform: scale(1.2); /* थोड़ा बड़ा होगा */
+    filter: drop-shadow(0 0 25px #72a1de); /* Blue glow effect */
+}
+@keyframes glow {
+    0% { filter: drop-shadow(0 0 5px #72a1de); }
+    50% { filter: drop-shadow(0 0 20px #72a1de); }
+    100% { filter: drop-shadow(0 0 5px #72a1de); }
+}
+
+.character:hover {
+    transform: scale(1.2);
+    animation: glow 1s infinite alternate;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Small devices (Phones: upto 600px) */
+@media screen and (max-width: 600px) {
+    .container {
+        height: auto;
+    }
+
+    .title {
+        font-size: 25px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    header ul {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    header ul li {
+        margin: 5px 0;
+    }
+
+    .hero {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-info h1 {
+        font-size: 40px;
+        line-height: 45px;
+        margin-bottom: 20px;
+    }
+
+    .hero-info p {
+        font-size: 16px;
+        max-width: 90%;
+    }
+
+    .hero-info button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .astronaut {
+        height: 250px;
+        right: 0;
+    }
+
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .info-card {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .info-card h1 {
+        font-size: 40px;
+    }
+
+    .info-card p {
+        font-size: 16px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon-button {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .phone,
+    .gmail,
+    .discord,
+    .whatsapp {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .project-button ul {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .pushable {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+/* ✅ Small devices (Phones: upto 600px) */
+@media screen and (max-width: 600px) {
+    /* 🌟 Images */
+    .background {
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    .astronaut {
+        height: 200px;
+        right: 0;
+    }
+
+    .blackhole-box video {
+        width: 100%;
+        margin-top: -10%;
+    }
+
+    /* 🌟 Buttons */
+    .hero-info button,
+    .pushable {
+        width: 100%;
+        padding: 12px;
+        font-size: 18px;
+    }
+
+    .icon-button {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .icon-button i {
+        font-size: 40px;
+    }
+
+    .icon-button p {
+        font-size: 12px;
+    }
+
+    /* 🌟 Text */
+    .hero-info h1 {
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .hero-info p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .info-card h1 {
+        font-size: 40px;
+    }
+
+    .info-card p {
+        font-size: 16px;
+    }
+
+    .About,
+    .Skill {
+        font-size: 30px;
+    }
+
+    .Gam-Dev {
+        font-size: 20px;
+    }
+
+    .about-me {
+        font-size: 18px;
+        padding: 8px 15px;
+    }
+
+    .tag {
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+/* ✅ Medium devices (Tablets: 601px - 1024px) */
+@media screen and (max-width: 1024px) {
+    /* 🌟 Images */
+    .astronaut {
+        height: 250px;
+        right: 5%;
+    }
+
+    .blackhole-box video {
+        width: 80%;
+        margin-top: -15%;
+    }
+
+    /* 🌟 Buttons */
+    .hero-info button {
+        width: 80%;
+        padding: 12px;
+        font-size: 20px;
+    }
+
+    .icon-button {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    .icon-button i {
+        font-size: 50px;
+    }
+
+    .icon-button p {
+        font-size: 14px;
+    }
+
+    /* 🌟 Text */
+    .hero-info h1 {
+        font-size: 45px;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    .hero-info p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .info-card h1 {
+        font-size: 50px;
+    }
+
+    .info-card p {
+        font-size: 18px;
+    }
+
+    .About,
+    .Skill {
+        font-size: 35px;
+    }
+
+    .Gam-Dev {
+        font-size: 25px;
+    }
+
+    .about-me {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+
+    .tag {
+        font-size: 40px;
+    }
+}
+
+/* ✅ Large devices (Desktops: 1025px and above) */
+@media screen and (min-width: 1025px) {
+    /* 🌟 Images */
+    .astronaut {
+        height: 400px;
+    }
+
+    /* 🌟 Buttons */
+    .hero-info button {
+        width: auto;
+        font-size: 22px;
+    }
+
+    .icon-button {
+        width: 120px;
+        height: 120px;
+        font-size: 22px;
+    }
+
+    .icon-button i {
+        font-size: 60px;
+    }
+
+    .icon-button p {
+        font-size: 16px;
+    }
+
+    /* 🌟 Text */
+    .hero-info h1 {
+        font-size: 60px;
+        line-height: 65px;
+    }
+
+    .hero-info p {
+        font-size: 20px;
+    }
+
+    .info-card h1 {
+        font-size: 55px;
+    }
+
+    .info-card p {
+        font-size: 20px;
+    }
+
+    .About,
+    .Skill {
+        font-size: 40px;
+    }
+
+    .Gam-Dev {
+        font-size: 30px;
+    }
+
+    .about-me {
+        font-size: 24px;
+    }
+
+    .tag {
+        font-size: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*@media(max-aspect-ratio: 16/9){
+    .background{
+        width: auto;
+        height:100%;
+    }
+}
+@media(min-aspect-ratio: 16/9){
+    .background{
+        width: 100%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 1000px){
+    .blackhole-box video{
+        margin-top: -20%;
+    }
+    .hero-info h1{
+        font-size: 40px;
+        max-width: 400px;
+    }
+    .hero-info p{
+        max-width: 300px;
+
+    }
+    .hero img{
+        height: 300px;
+
+    }
+    .about-section{
+        padding:10px;
+        width:90%;
+
+    }
+    .info-card h1{
+        margin-right:5px;
+    }
+}
+@media screen and (max-width: 700px){
+    header ul{
+        display: none;
+
+    }
+    .blackhole-box video{
+        margin-top: -11%;
+    }
+    .about-section{
+        width:80%;
+        flex-wrap: wrap;
+
+    }
+    .hero{
+        flex-direction: column;
+    }
+    .hero-info{
+        bottom: 10px;
+
+    }
+    .hero img{
+        height: 200px;
+        right: 100px;
+        top:70px;
+    }
+    .container{
+        height:100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .project-button ul {
+        padding: 5vw; /* Reduce padding for smaller screens 
+    }
+}*/
